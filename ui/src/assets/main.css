@@ -1,0 +1,161 @@
+/* @import './base.css'; */
+
+@font-face {
+  font-family: rdr;
+  src: url(fonts/rdrlino-regular-webfont.woff);
+}
+
+:root {
+  --western-button-background-color: #2c191c;
+  --western-button-accent-color: #f58b77;
+  --western-button-accent-color-hover: #f15a29;
+  --western-button-dashed-border: 1px dashed white;
+  --western-button-circle-background: url('https://smartupsell.hu/wp-content/uploads/2018/12/right-arrow_64x64.png');
+  --v-theme-on-background: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+} */
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.font-rdr {
+  font-family: rdr;
+}
+
+#app {
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff !important;
+}
+
+.view-book-box {
+  background-size: cover;
+  min-width: 50vw;
+  
+  padding: 10px;
+  background-image: url(inkroller.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: 999;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dimmed-text {
+  opacity: 70%;
+}
+
+h1, h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.v-btn__content > i {
+  color: #fff !important;
+}
+
+.book-container-vertical-infinite {
+  overflow: auto;
+
+  max-width: 100%;
+  max-height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.book-container-horizontal-one-page {
+  overflow: auto;
+
+  max-width: 100%;
+  min-height: 800px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.book-container-horizontal-two-page {
+  overflow: auto;
+
+  width: 1400px;
+  height: 800px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.book-img-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.book-img {
+  /* max-width: 800px; */
+  max-width: 100%;
+}
+
+/* .book-img-preview-container {
+
+  overflow: auto;
+
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.scene-img-preview {
+  max-width: 200px;
+} */
+
+
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.close-button:active {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+/* Resolution support */
+@media (max-width: 1920px) {
+}
